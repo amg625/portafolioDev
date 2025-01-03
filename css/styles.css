@@ -1,0 +1,347 @@
+/* Archivo style.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: #0d0d0d;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #3ede25;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin: 0 10px;
+}
+
+header ul li a {
+    color: #3ede25;
+    text-decoration: none;
+}
+
+
+#hero h2 {
+    color: #3ede25;
+}
+
+#hero button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #3ede25;
+    color: #0d0d0d;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#about, #projects, #certified, #contact {
+    padding: 50px 50px;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* 2 partes para el texto, 1 para la imagen */
+    gap: 20px;
+    align-items: start;
+}
+
+.description{
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+  
+.upload-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Imagen */
+.upload-photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Media Query para Pantallas Pequeñas */
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr; /* Apila los elementos en una sola columna */
+    }
+
+    .upload-photo {
+        margin-top: 20px;
+    }
+}
+
+.project {
+    background-color: #1a1a1a;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.project h3 {
+    color: #3ede25;
+}
+
+.certified {
+    background-color: #1a1a1a;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.certified h3 {
+    color: #3ede25;
+}
+
+/* Botones de Descarga */
+.download-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #28831a; /* Fondo verde de tu paleta */
+    color: #ffffff; /* Texto blanco */
+    border: 1px solid #28831a; /* Borde del mismo verde */
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #28b31d; /* Verde más oscuro para hover */
+    color: #f0f0f0; /* Texto ligeramente más claro en hover */
+    border-color: #28b31d; /* Cambia el borde en hover */
+}
+
+
+
+
+/* Sección de Contacto */
+#contact {
+    display: grid;
+    background-color: #1a1a1a;
+    padding: 50px 50px;
+    margin: 20px 50px;
+    border-radius: 5px; /* Hace que la sección ocupe toda la altura de la ventana */
+    place-items: center;
+}
+
+/* Contenedor del Formulario */
+#contact-form {
+    width: 50%; /* Ocupa 1.5fr de un diseño basado en 3fr */
+    max-width: 500px; /* Máximo ancho para pantallas grandes */
+    padding: 20px;
+    background-color: #0d0d0d;
+    border: 1px solid #3ede25;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+}
+
+/* Estilo del Formulario */
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px -10.5px;
+    background-color: #0d0d0d;
+    border: 1px solid #3ede25;
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #3ede25;
+    color: #0d0d0d;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%; /* Botón ocupa todo el ancho del formulario */
+}
+
+form button:hover {
+    background-color: #28b31d;
+}
+
+
+
+
+
+/* Sección de Contacto */
+#contact-info {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 250px; /* Ajusta el ancho según sea necesario */
+    padding: 20px;
+    background-color: #0d0d0d;
+    color: #ffffff;
+    border-right: 2px solid #3ede25;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0 10px 10px 0;
+}
+
+#contact-info h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: left;
+    color: #3ede25;
+}
+
+.contact-container p {
+    margin-bottom: 15px;
+}
+
+.contact-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-container li {
+    margin-bottom: 10px;
+}
+
+/* Estilos de los Enlaces */
+.contact-container a {
+    text-decoration: none;
+    color: #3ede25;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s;
+}
+
+.contact-container a:hover {
+    color: #28b31d;
+}
+
+/* Estilo de los Iconos */
+.contact-container i {
+    font-size: 20px;
+}
+
+
+
+
+/* Botón de Copiar */
+#copy-email {
+    margin-left: 10px;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #3ede25;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+#copy-email:hover {
+    color: #28b31d;
+}
+
+
+/* Estilo de la Sección Hero */
+#hero {
+    position: relative;
+    height: 100vh; /* Ocupa toda la ventana del navegador */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff; /* Color del texto sobre el video */
+    overflow: hidden; /* Asegura que el video no salga del contenedor */
+}
+
+/* Video de Fondo */
+#hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Ajusta el ancho del video */
+    height: 100%; /* Ajusta la altura del video */
+    object-fit: cover; /* Asegura que el video cubra todo el contenedor */
+    z-index: -2; /* Coloca el video debajo del overlay */
+}
+
+/* Overlay Oscuro sobre el Video */
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+    z-index: -1; /* Capa sobre el video pero debajo del contenido */
+}
+
+/* Contenido Principal */
+.hero-content {
+    position: relative;
+    text-align: center;
+    z-index: 1; /* Asegura que el contenido esté sobre el overlay */
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-content button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #3ede25;
+    color: #0d0d0d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-content button:hover {
+    background-color: #28b31d;
+}
+
+
+

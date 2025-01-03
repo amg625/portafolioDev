@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <meta name="author" content="Guillermo Alvarez">
+    <link rel="icon" href="media/icoDev.ico" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="app/script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Guillermo Alvarez</h1>
+            <ul>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#certified">Estudios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <!-- Video de Fondo -->
+            <video autoplay muted loop id="hero-video">
+                <source src="media/videoBanner.mp4" type="video/mp4">
+                Tu navegador no soporta el formato de video.
+            </video>
+        
+            <!-- Contenido Principal -->
+            <div class="hero-content">
+                <h2>Hola, soy Guillermo Alvarez</h2>
+                <p>Desarrollador Fullstack apasionado por crear soluciones innovadoras y dinámicas.</p>
+                <button id="view-projects">Ver Proyectos</button>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>Sobre Mí</h2>
+            <div class="about-container">
+                <article class="description">
+                    <p>
+                        Soy Guillermo Álvarez, Ingeniero en Electrónica egresado de la UAM Azcapotzalco, apasionado por la ingeniería, la tecnología y la creatividad. Mi interés abarca tanto el hardware como el software, con un enfoque especial en el desarrollo de aplicaciones y la inteligencia artificial. Me apasiona seguir aprendiendo para mantenerme al día con las últimas tecnologías y ofrecer soluciones innovadoras.
+                    </p>
+                    <p>
+                        En el ámbito tecnológico, domino HTML, CSS, React, JavaScript, Node.js, SQL y Java, y actualmente estoy profundizando en DevOps para mejorar la integración y automatización en mis proyectos. Además, gestiono mis desarrollos utilizando metodologías ágiles como Scrum y Kanban, lo que me permite trabajar de manera eficiente y colaborativa.
+                    </p>
+                    <p>
+                        Fuera de la tecnología, soy un apasionado de la música y la fotografía, dos áreas que me inspiran y complementan mi creatividad como desarrollador. Estas pasiones, junto con mi interés por la innovación, me motivan a crear proyectos que combinen técnica y arte.
+                    </p>
+                    <p>
+                        Además de mi pasión por la tecnología, disfruto mucho de las experiencias culturales y artísticas. Me encanta asistir a conciertos, espectáculos y eventos de lucha libre, los cuales me llenan de inspiración y emoción. También valoro la tranquilidad de viajar a pueblos mágicos, donde puedo desconectarme, explorar nuevas perspectivas y encontrar ideas que nutren mi creatividad tanto en la vida personal como profesional. Estas experiencias me recuerdan la importancia de disfrutar el momento y seguir aprendiendo de todo lo que me rodea.
+                    </p>
+                </article>
+                <div class="upload-photo">
+                    <img src="media/fotoMemo.jpg" alt="Foto de Guillermo" />
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Proyectos</h2>
+            <div class="project">
+                <h3>Proyecto 1</h3>
+                <p>Descripción breve del proyecto.</p>
+            </div>
+            <div class="project">
+                <h3>Proyecto 2</h3>
+                <p>Descripción breve del proyecto.</p>
+            </div>
+        </section>
+
+        <section id="certified">
+            <h2>Estudios y Certificaciones</h2>
+            
+            <!-- Ingeniería en Electrónica -->
+            <div class="certified">
+                <h3>🎓 Grado: Ingeniería en Electrónica</h3>
+                <p><strong>Institución:</strong> Universidad Autónoma Metropolitana - Azcapotzalco</p>
+                <p><strong>Documento Recibido:</strong> Título Profesional y Cédula</p>
+                <p><strong>Lugar y Fecha:</strong> Ciudad de México, 2018</p>
+                <a href="ruta-del-titulo.pdf" target="_blank" class="download-button" download>📥 Descargar</a>
+            </div>
+            
+            <!-- Diplomado en IA -->
+            <div class="certified">
+                <h3>🤖 Diplomado: Inteligencia Artificial Generativa aplicada a proyectos</h3>
+                <p><strong>Institución:</strong>Universidad Autónoma Metropolitana - Azcapotzalco</p>
+                <p><strong>Documento Recibido:</strong> Certificado de Diplomado</p>
+                <p><strong>Lugar y Fecha:</strong> Ciudad de México, 2024</p>
+                <a href="ruta-del-diplomado.pdf" target="_blank" class="download-button" download>📥 Descargar</a>
+            </div>
+            
+            <!-- Certificación Google Project Management -->
+            <div class="certified">
+                <h3>📋 Certificación: Google Project Management</h3>
+                <p><strong>Institución:</strong> Google (Coursera)</p>
+                <p><strong>Documento Recibido:</strong> Certificado Profesional</p>
+                <p><strong>Lugar y Fecha:</strong> En línea, 2024</p>
+                <a href="https://coursera.org/share/cb4eaff76ccbdaa7a824f20455cdb72c" target="_blank" class="download-button" download >📥 Descargar Certificado</a>
+            </div>
+            
+            <!-- Certificación en Scrum -->
+            <div class="certified">
+                <h3>🔧 Certificación: Scrum Fundamentals Certified (SFC™)</h3>
+                <p><strong>Institución:</strong> Scrum.org</p>
+                <p><strong>Documento Recibido:</strong>ScrumStudy</p>
+                <p><strong>Lugar y Fecha:</strong>En línea, 2024</p>
+                <a href="https://www.scrumstudy.com/certification/verify?type=SFC&number=1049725" target="_blank" class="download-button" download>📥 Descargar Certificado</a>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            
+            <!-- Información de Contacto Directa -->
+            <section id="contact-info">
+                <h2>Contacto</h2>
+                <div class="contact-container">
+                    <p><strong>Correo:</strong> <span id="email-text">alvarezmg01@gmail.com</span>
+                        <button id="copy-email" onclick="copyEmail()" title="Copiar">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </p>
+                    <p><strong>Redes Sociales:</strong></p>
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/guillermoam625/" target="_blank" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/GuillermoAM625" target="_blank" title="GitHub">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        
+            <!-- Formulario de Contacto -->
+            <form id="contact-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+        
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Portafolio. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

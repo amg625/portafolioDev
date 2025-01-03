@@ -41,3 +41,13 @@ document.addEventListener("DOMContentLoaded", () => {
         contactForm.reset();
     });
 });
+
+
+document.getElementById("send-whatsapp").addEventListener("click", () => {
+    const phoneNumber = "5215588101487"; // Reemplaza con el número de teléfono (formato internacional)
+    const message = "¡Hola! Estoy interesado en contactarte."; // Mensaje inicial
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    // Abre la URL en una nueva pestaña
+    window.open(whatsappUrl, "_blank");
+});

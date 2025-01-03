@@ -203,17 +203,17 @@ form button:hover {
 
 /* Sección de Contacto */
 #contact-info {
-    position: fixed;
-    top: 50%;
+    position: relative;
+    top: 45%;
     left: 0;
     transform: translateY(-50%);
-    width: 250px; /* Ajusta el ancho según sea necesario */
-    padding: 20px;
+    width: 300px; /* Ajusta el ancho según sea necesario */
+    padding: 0 20px;
     background-color: #0d0d0d;
     color: #ffffff;
-    border-right: 2px solid #3ede25;
+    border: 2px solid #3ede25;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-    border-radius: 0 10px 10px 0;
+    border-radius: 10px;
 }
 
 #contact-info h2 {
@@ -345,3 +345,26 @@ form button:hover {
 
 
 
+/* ENVIAR WHATSAPP*/
+
+#send-whatsapp {
+    display: flex;
+    align-items: center;
+    padding: 8px 13px;
+    background-color: #24bd5c; /* Color verde de WhatsApp */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#send-whatsapp:hover {
+    background-color: #159245; /* Verde más oscuro en hover */
+}
+
+#send-whatsapp i {
+    margin-right: 8px;
+    font-size: 20px;
+}

@@ -1,5 +1,4 @@
-// Funcion para copiar email o algun texto.
-
+// FUNCION PARA COPIAR EMAIL CON ICON
 function copyEmail() {
     const emailText = document.getElementById('email-text').textContent;
     navigator.clipboard.writeText(emailText)
@@ -11,8 +10,10 @@ function copyEmail() {
         });
 }
 
+
+// FUNCION PARA NAVEGAR DINAMICAMENTE EN EL SITIO WEB
 document.addEventListener("DOMContentLoaded", () => {
-    // Desplazamiento suave para "Ver Proyectos"
+    // Desplazamiento suave para "Ver Proyectos" (Desde el botón)
     const viewProjectsButton = document.getElementById("view-projects");
 
     viewProjectsButton.addEventListener("click", () => {
@@ -32,7 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Manejo del formulario de contacto
     const contactForm = document.getElementById("contact-form");
 
     contactForm.addEventListener("submit", (event) => {
@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+// FUNCION PARA AGREGAR BOTON DE WHATSAPP
 document.getElementById("send-whatsapp").addEventListener("click", () => {
     const phoneNumber = "5215588101487"; // Reemplaza con el número de teléfono (formato internacional)
     const message = "¡Hola! Estoy interesado en contactarte."; // Mensaje inicial

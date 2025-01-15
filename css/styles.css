@@ -52,6 +52,22 @@ header ul li a {
     font-size: 16px;
 }
 
+
+.button-generic {
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+}
+
+.button-generic:hover {
+    background-color: #28b31d; /* Verde más oscuro para hover */
+    color: #000000; /* Texto ligeramente más claro en hover */
+    border-color: #28b31d; /* Cambia el borde en hover */
+    text-decoration: none;
+}
+
+
+
 #about, #projects, #certified, #contact {
     padding: 50px 50px;
 }
@@ -63,13 +79,13 @@ header ul li a {
     align-items: start;
 }
 
-.description{
+.about-description{
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
   
-.upload-photo {
+.about-upload-photo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,7 +97,7 @@ header ul li a {
       }
 
       /* Imagen */
-.upload-photo img {
+.about-upload-photo img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
@@ -93,7 +109,7 @@ header ul li a {
         grid-template-columns: 1fr; /* Apila los elementos en una sola columna */
     }
 
-    .upload-photo {
+    .about-upload-photo {
         margin-top: 20px;
     }
 }

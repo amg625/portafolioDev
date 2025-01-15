@@ -1,19 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- Idioma inicial -->
+
+<!-- Cabeza de la página -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
-    <meta name="author" content="Guillermo Alvarez">
-    <link rel="icon" href="media/icoDev.ico" type="image/x-icon">
+    <meta charset="UTF-8"> <!-- Define la codificación de los caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Página responsiva y que se adapte al tamaño de dispositivos -->
+    <title>Guillermo Alvarez</title> <!-- Nombre de la página en la pestaña del navegador -->
+    <meta name="author" content="Guillermo Alvarez"> <!-- Responsable y creador del documento -->
+    <link rel="icon" href="media/icoDev.ico" type="image/x-icon"> <!-- Icono que se ve en la pestaña del navegador -->
+    <!-- Importa el archivo CSS de Font Awesome, una biblioteca de íconos y fuentes diseñadas para su uso en sitios web -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="app/script.js"></script>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Invoca el archivo de estilos css -->
+    <script src="app/script.js"></script> <!-- Invoca el archivo de javascript -->
 </head>
+
+<!-- Cuerpo de la página -->
 <body>
+    <!-- Cabecera de la página, es el inicio de lo que es visible en el sitio web -->
     <header>
         <nav>
-            <h1>Guillermo Alvarez</h1>
+            <h1><i class="fa-solid fa-terminal"></i> GuillermoAlvarez</h1> <!-- Primer elemento de la cabecera -->
+            <!-- Elementos navegables en la cabecera -->
             <ul>
                 <li><a href="#about">Sobre Mí</a></li>
                 <li><a href="#projects">Proyectos</a></li>
@@ -23,26 +30,30 @@
         </nav>
     </header>
 
+    <!-- Cuerpo de la página web -->
     <main>
-        <section id="hero">
+        <section id="hero"> <!-- Elemento visual de bienvenida al usuario -->
             <!-- Video de Fondo -->
             <video autoplay muted loop id="hero-video">
                 <source src="media/videoBanner.mp4" type="video/mp4">
                 Tu navegador no soporta el formato de video.
             </video>
-        
             <!-- Contenido Principal -->
             <div class="hero-content">
                 <h2>Hola, soy Guillermo Alvarez</h2>
                 <p>Desarrollador Fullstack apasionado por crear soluciones innovadoras y dinámicas.</p>
-                <button id="view-projects">Ver Proyectos</button>
+                <button id="view-projects">Ver Proyectos
+                <i class="fa-solid fa-code"></i></button> <!-- Botón para llevar a una parte del portafolio (Proyectos) -->
+                <button id="button-generic"><a href="https://drive.google.com/file/d/1KiuK8GCkpGq6p8bDYBzjbM0VhwihhogL/view?usp=drive_link" target="_blank" download>Descargar CV
+                <i class="fas fa-download"></i></a></button>
             </div>
         </section>
 
+        <!-- INICIA SECCION ACERCA DE MI -->
         <section id="about">
             <h2>Sobre Mí</h2>
             <div class="about-container">
-                <article class="description">
+                <article class="about-description">
                     <p>
                         Soy Guillermo Álvarez, Ingeniero en Electrónica egresado de la UAM Azcapotzalco, apasionado por la ingeniería, la tecnología y la creatividad. Mi interés abarca tanto el hardware como el software, con un enfoque especial en el desarrollo de aplicaciones y la inteligencia artificial. Me apasiona seguir aprendiendo para mantenerme al día con las últimas tecnologías y ofrecer soluciones innovadoras.
                     </p>
@@ -56,12 +67,13 @@
                         Además de mi pasión por la tecnología, disfruto mucho de las experiencias culturales y artísticas. Me encanta asistir a conciertos, espectáculos y eventos de lucha libre, los cuales me llenan de inspiración y emoción. También valoro la tranquilidad de viajar a pueblos mágicos, donde puedo desconectarme, explorar nuevas perspectivas y encontrar ideas que nutren mi creatividad tanto en la vida personal como profesional. Estas experiencias me recuerdan la importancia de disfrutar el momento y seguir aprendiendo de todo lo que me rodea.
                     </p>
                 </article>
-                <div class="upload-photo">
+                <div class="about-upload-photo">
                     <img src="media/fotoMemo.jpg" alt="Foto de Guillermo" />
                 </div>
             </div>
         </section>
 
+        <!-- INICIA SECCION PROYECTOS -->
         <section id="projects">
             <h2>Proyectos</h2>
             <div class="project">
@@ -74,9 +86,9 @@
             </div>
         </section>
 
+        <!-- INICIA SECCION ESTUDIOS -->
         <section id="certified">
             <h2>Estudios y Certificaciones</h2>
-            
             <!-- Ingeniería en Electrónica -->
             <div class="certified">
                 <h3>🎓 Grado: Ingeniería en Electrónica</h3>
@@ -85,16 +97,14 @@
                 <p><strong>Lugar y Fecha:</strong> Ciudad de México, 2018</p>
                 <a href="ruta-del-titulo.pdf" target="_blank" class="download-button" download>📥 Descargar</a>
             </div>
-            
             <!-- Diplomado en IA -->
             <div class="certified">
                 <h3>🤖 Diplomado: Inteligencia Artificial Generativa aplicada a proyectos</h3>
                 <p><strong>Institución:</strong>Universidad Autónoma Metropolitana - Azcapotzalco</p>
                 <p><strong>Documento Recibido:</strong> Certificado de Diplomado</p>
                 <p><strong>Lugar y Fecha:</strong> Ciudad de México, 2024</p>
-                <a href="ruta-del-diplomado.pdf" target="_blank" class="download-button" download>📥 Descargar</a>
+                <a href="https://drive.google.com/file/d/17X90beObbtxPsEnBSQP0qzouxRBSu3C9/view?usp=sharing" target="_blank" class="download-button" download>📥 Descargar</a>
             </div>
-            
             <!-- Certificación Google Project Management -->
             <div class="certified">
                 <h3>📋 Certificación: Google Project Management</h3>
@@ -103,7 +113,6 @@
                 <p><strong>Lugar y Fecha:</strong> En línea, 2024</p>
                 <a href="https://coursera.org/share/cb4eaff76ccbdaa7a824f20455cdb72c" target="_blank" class="download-button" download >📥 Descargar Certificado</a>
             </div>
-            
             <!-- Certificación en Scrum -->
             <div class="certified">
                 <h3>🔧 Certificación: Scrum Fundamentals Certified (SFC™)</h3>
@@ -113,56 +122,61 @@
                 <a href="https://www.scrumstudy.com/certification/verify?type=SFC&number=1049725" target="_blank" class="download-button" download>📥 Descargar Certificado</a>
             </div>
         </section>
+
+        <!-- INICIA SECCION CONTACTO -->
         <section id="contact">
             <h2>Contacto</h2>
-            
-            <!-- Información de Contacto Directa -->
+            <!-- Datos de contacto -->
             <section id="contact-info">
-                <h2>Contacto</h2>
+                <h3>Contáctame</h3>
                 <div class="contact-container">
-                    <p><strong>Email:</strong> <span id="email-text">alvarezmg01@gmail.com</span>
+                    <p><strong>Email:</strong> <span id="email-text">alvarezmg01@gmail.com</span>  <!-- Mostrar el correo electrónico -->
+                        <!-- Botón con la funcionalidad de copiar el correo de forma eficiente -->
                         <button id="copy-email" onclick="copyEmail()" title="Copiar">
                             <i class="fas fa-copy"></i>
                         </button>
-                    <p><strong>Teléfono:</strong> <span id="telefono-text">+52 5588101487</span>
+                    <p><strong>Teléfono:</strong> <span id="telefono-text">+52 55 8810 1487</span> <!-- Mostrar el teléfono -->
+                        <!-- Botón con la funcionalidad de enviar un mensaje de whatsapp al teléfono indicado en js -->
                         <button id="send-whatsapp" title="Enviar WhatsApp">
                             <i class="fab fa-whatsapp"></i> Enviar Mensaje
                         </button>
                     </p>
-                    <p><strong>Redes Sociales:</strong></p>
-                    <ul>
+                    <p><strong>Redes Sociales:</strong></p> <!-- Mostrar redes sociales -->
+                    <!-- Mostrar redes en formato de listas desordenadas -->
+                    <ul> 
                         <li>
-                            <a href="https://www.linkedin.com/in/guillermoam625/" target="_blank" title="LinkedIn">
-                                <i class="fab fa-linkedin"></i> LinkedIn
+                            <a href="https://www.linkedin.com/in/guillermo-alvarez-m/" target="_blank" title="LinkedIn"> <!-- Link a LinkedIn -->
+                                <i class="fab fa-linkedin"></i> LinkedIn <!-- Mostrar el ícono de LinkedIn para vincular el link-->
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/GuillermoAM625" target="_blank" title="GitHub">
-                                <i class="fab fa-github"></i> GitHub
+                            <a href="https://github.com/amg625" target="_blank" title="GitHub"> <!-- Link a GitHub -->
+                                <i class="fab fa-github"></i> GitHub <!-- Mostrar el ícono de GitHub para vincular el link -->
                             </a>
                         </li>
                     </ul>
                 </div>
             </section>
-        
             <!-- Formulario de Contacto -->
             <form id="contact-form">
+                <!-- Solicita nombre -->
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" required>
-        
+                <!-- Solicita correo -->
                 <label for="email">Correo:</label>
                 <input type="email" id="email" name="email" required>
-        
+                <!-- Solicita ingresar un mensaje -->
                 <label for="message">Mensaje:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
-        
+                <!-- Botón para enviar datos -->
                 <button type="submit">Enviar</button>
             </form>
         </section>
-    </main>
+    </main> <!-- Fin del cuerpo de la página -->
 
+    <!-- FOOTER DEL SITIO -->
     <footer>
-        <p>&copy; 2025 Mi Portafolio. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Mi Portafolio, Guillermo Alvarez. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>

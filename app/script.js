@@ -18,10 +18,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     viewProjectsButton.addEventListener("click", () => {
         const projectsSection = document.getElementById("projects");
-        projectsSection.scrollIntoView({ behavior: "smooth" });
+        // scrollIntoView: Es un método nativo de los elementos del DOM que desplaza la vista del navegador para que el elemento sea visible dentro de la ventana (viewport).
+        projectsSection.scrollIntoView({ behavior: "smooth" }); // smooth: Indica que el desplazamiento debe realizarse de manera suave (con una animación). Sin esta opción, el desplazamiento sería inmediato.
     });
 
     // Agregar desplazamiento suave para enlaces del menú
+    // querySelectorAll: Devuelve todos los elementos que coinciden con el selector CSS especificado.
     const menuLinks = document.querySelectorAll("header nav ul li a");
 
     menuLinks.forEach(link => {
@@ -41,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
         contactForm.reset();
     });
 });
+
 
 
 // FUNCION PARA AGREGAR BOTON DE WHATSAPP

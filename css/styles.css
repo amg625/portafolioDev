@@ -1,8 +1,10 @@
 /* ARCHIVO STYLE .CSS */
 /*Variables*/
 :root {
-    --primary-color: #0d0b31;
-    --secondary-color: #2ecc71;
+    --azulfondo: #0c122e;
+    --azulClaro: #0094cf;
+    --anaranjado: #ea7500;
+    --grisOscuro: #1a1a1a;
     --font-size: 16px;
     --border-radius: 8px;
 }
@@ -11,8 +13,26 @@ body {
         margin: 0;
         font-family: Arial, sans-serif;
         color: #ffffff;
-        background-color: black;
+        background-color: var(--azulfondo);
     }
+/*Lo que esta afuera del MQ se aplica cuando se tienen pantallas pequeñas como smartphone ya que la condicion es min-width: 768px*/
+header{
+        background-color: var(--grisOscuro);
+        padding: 1px 30px;
+        text-align: center;
+}
+header h1{
+        color: var(--azulClaro);
+}
+header ul{
+        list-style: none;
+}
+header ul li a{
+        color: var(--azulClaro);
+        font-weight: bolder;
+        text-decoration: none;
+}
+@media (min-width: 768px) {
 header {
         background-color: #1a1a1a;
         padding: 1px 30px;
@@ -25,26 +45,24 @@ header nav {
 }
 /*Selecciona un elemento h1 que esta dentro de un header*/
 header h1 {
-        color: #3ede25;
+        color: var(--azulClaro);
 }
 /*Selecciona un elemento ul que esta dentro de un header*/
 header ul {
         list-style: none;
         display: flex;
-        margin: 0;
-        padding: 0;
 }
 /*Selecciona un elemento li que esta contenido en ul y que a su vez esta dentro de un header*/
 header ul li {
         margin: 0 10px;
 }
 header ul li a {
-        color: #3ede25;
+        color: var(--azulClaro);
         text-decoration: none;
 }
 header a{
         text-decoration: none;
-}
+}}       
 a{
         text-decoration: none;
         color: black;
@@ -75,6 +93,46 @@ a{
         font-size: 16px;
 }
 /* Estilo de la Sección Hero */
+#hero {
+    position: static; /*Me ayudo a mantener la ventana en el tamaño justo sin que se saliera de la ventana*/
+    height: 50vh; /* Ocupa toda la ventana del navegador si usamos 100vh*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff; /* Color del texto sobre el video */
+    overflow: hidden; /* Asegura que el video no salga del contenedor */
+}
+/* Video de fondo */
+#hero-video {
+    position:absolute;
+    top: 26%; /*Se asegura de que en smartphone el video se centre en el hero*/
+    left: 50%; /*Se asegura de que en smartphone el video se centre en el hero*/
+    transform: translate(-50%, -50%);
+    width: 100%; /* Ajusta el ancho del video */
+    height: 100%; /* Ajusta la altura del video */
+    object-fit: cover; /* Asegura que el video cubra todo el contenedor */
+    z-index: -2; /* Coloca el video debajo del overlay */
+}
+/* Overlay Fondo Oscuro (Transparencia) sobre el Video */
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+    z-index: -1; /* Capa sobre el video pero debajo del contenido */
+}
+/* Contenido Principal */
+.hero-content {
+    position: relative;
+    text-align: center;
+    z-index: 1; /* Asegura que el contenido esté sobre el overlay */
+    padding: 30px;
+}
+@media (min-width: 768px) {
 #hero {
         position: static; /*Me ayudo a mantener la ventana en el tamaño justo sin que se saliera de la ventana*/
         height: 50vh; /* Ocupa toda la ventana del navegador */
@@ -116,7 +174,7 @@ a{
 .hero-content h2 {
         font-size: 2.5rem;
         margin-bottom: 10px;
-        color: #3ede25;
+        color: var(--azulClaro);
 }
 .hero-content p {
         font-size: 1.2rem;
@@ -134,6 +192,7 @@ a{
 .hero-content button:hover {
         background-color: #28b31d;
 }
+}
 /*INICIA SECCION ABOUT ME*/
 #about, #projects, #certified, #contact {
         padding: 50px 50px;
@@ -148,6 +207,8 @@ a{
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
 }
 .about-upload-photo {
         display: flex;

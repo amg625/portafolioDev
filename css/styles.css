@@ -1,10 +1,17 @@
 /* ARCHIVO STYLE .CSS */
+/*Variables*/
+:root {
+    --primary-color: #0d0b31;
+    --secondary-color: #2ecc71;
+    --font-size: 16px;
+    --border-radius: 8px;
+}
 /* Selectores Básicos*/
 body {
         margin: 0;
         font-family: Arial, sans-serif;
         color: #ffffff;
-        background-color: #0d0d0d;
+        background-color: black;
     }
 header {
         background-color: #1a1a1a;
@@ -38,16 +45,20 @@ header ul li a {
 header a{
         text-decoration: none;
 }
+a{
+        text-decoration: none;
+        color: black;
+}
 /*Configuración de botón genérico, se usa para "Descargar CV"*/
-.button-generic {
+#button-generic {
         font-style: normal;
         text-decoration: none;
         color: black;
 }
 /*Hover indica que ocurre al posicionar el puntero en el botón*/
-.button-generic:hover {
+#button-generic:hover {
         background-color: #28b31d; /* Verde más oscuro para hover */
-        color: #000000; /* Texto ligeramente más claro en hover */
+        color: black; /* Texto ligeramente más claro en hover */
         border-color: #28b31d; /* Cambia el borde en hover */
         text-decoration: none;
 }
@@ -65,8 +76,8 @@ header a{
 }
 /* Estilo de la Sección Hero */
 #hero {
-        position: relative;
-        height: 100vh; /* Ocupa toda la ventana del navegador */
+        position: static; /*Me ayudo a mantener la ventana en el tamaño justo sin que se saliera de la ventana*/
+        height: 50vh; /* Ocupa toda la ventana del navegador */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -77,7 +88,7 @@ header a{
 /* Video de fondo */
 #hero-video {
         position: absolute;
-        top: 50%;
+        top: 10%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%; /* Ajusta el ancho del video */

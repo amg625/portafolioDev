@@ -3,14 +3,14 @@
 :root {
     --azulfondo: #0c122e;
     --azulClaro: #0284b8;
-    --azulElectrico: #3ecff0;
+    --azulElectrico: #3ecff0; /*3ecff0*/
     --anaranjado: #ea7500;
     --grisOscuro: #2f2f2f;
     --verdeWhatsApp: #24bd5c;
     --blanco: white;
     --negro: black;
     --font-size: 16px;
-    --border-radius: 8px;
+    --border-radius: 8px; 
 }
 /* Selectores Básicos*/
 body {

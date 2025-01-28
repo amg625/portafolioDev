@@ -3,14 +3,14 @@
 :root {
     --azulfondo: #0c122e;
     --azulClaro: #0284b8;
-    --azulElectrico: #3ecff0;
+    --azulElectrico: #3ecff0; /*3ecff0*/
     --anaranjado: #ea7500;
     --grisOscuro: #2f2f2f;
     --verdeWhatsApp: #24bd5c;
     --blanco: white;
     --negro: black;
     --font-size: 16px;
-    --border-radius: 8px;
+    --border-radius: 8px; 
 }
 /* Selectores Básicos*/
 body {
@@ -79,7 +79,7 @@ a{
 }
 /*Hover indica que ocurre al posicionar el puntero en el botón*/
 #button-generic:hover {
-        background-color: var(--azulClaro); /* Verde más oscuro para hover */
+        background-color: var(--azulClaro); /* azul más oscuro para hover */
         color: var(--blanco); /* Texto ligeramente más claro en hover */
         border-color: var(--azulClaro); /* Cambia el borde en hover */
         text-decoration: none;
@@ -267,9 +267,9 @@ a{
         display: inline-block;
         margin-top: 10px;
         padding: 10px 15px;
-        background-color: var(--azulClaro); /* Fondo verde de tu paleta */
+        background-color: var(--azulClaro); /* Fondo azul de tu paleta */
         color: #ffffff; /* Texto blanco */
-        border: 1px solid var(--azulClaro); /* Borde del mismo verde */
+        border: 1px solid var(--azulClaro); /* Borde del mismo azul */
         text-decoration: none;
         font-size: 14px;
         font-weight: bold;
@@ -278,7 +278,7 @@ a{
         transition: background-color 0.3s ease, color 0.3s ease;
 }
 .download-button:hover {
-        background-color: var(--azulElectrico); /* Verde más oscuro para hover */
+        background-color: var(--azulElectrico); /* azul más claro para hover */
         color: #f0f0f0; /* Texto ligeramente más claro en hover */
         border-color: var(--azulElectrico); /* Cambia el borde en hover */
 }
@@ -360,7 +360,7 @@ a{
         display: flex;
         align-items: center;
         padding: 8px 13px;
-        background-color: var(--azulClaro); /* Color verde de WhatsApp */
+        background-color: var(--azulClaro); /* Color azul de WhatsApp */
         color: #ffffff;
         border: none;
         border-radius: 5px;
@@ -440,15 +440,63 @@ form button:hover {
         height: 50vh; /* Si necesitas centrarlo verticalmente en toda la pantalla */
 }}
 /* INICIA SECCION DE PROYECTOS*/
-.project {
-        background-color: var(--grisOscuro);
-        padding: 20px;
-        margin: 20px 0;
-        border-radius: 5px;
+#projects {
+        color: var(--azulElectrico);
 }
 #projects h2{
         color: var(--azulElectrico);
+        position: grid;
 }
 .project h3 {
         color: var(--azulClaro);
+}
+.portafolio {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en filas */
+    justify-content: flex-start; /* Alinea los elementos al inicio horizontalmente */
+    align-items: stretch; /* Hace que todos los elementos tengan la misma altura */
+    padding: 20px;
+    margin: 20px 0px;
+    border-radius: 5px;
+    gap: 20px; /* Espaciado entre elementos */
+}
+
+.portafolio > div {
+    flex: 0 1 calc(25% - 20px); /* Cada elemento ocupa el 25% del ancho menos el gap */
+    box-sizing: border-box; /* Incluye padding y border dentro del tamaño */
+    display: flex; /* Asegura que su contenido interno también se ajuste */
+    flex-direction: column; /* Para alinear contenido interno en una columna */
+}
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .portafolio > div {
+        flex: 0 1 100%; /* En pantallas pequeñas, cada elemento ocupa el 100% */
+    }
+}
+.project{
+        background-color: var(--grisOscuro);
+        color: var(--blanco);
+        padding: 20px;
+        margin: 20px 0px;
+        border-radius: 5px;
+        flex: 1;
+}
+.projects-button{
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 15px;
+        background-color: var(--azulClaro); /* Fondo azul de tu paleta */
+        color: #ffffff; /* Texto blanco */
+        border: 1px solid var(--azulClaro); /* Borde del mismo azul */
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+        transition: background-color 0.3s ease, color 0.3s ease;
+}
+.projects-button:hover {
+        background-color: var(--azulElectrico); /* azul más claro para hover */
+        color: #f0f0f0; /* Texto ligeramente más claro en hover */
+        border-color: var(--azulElectrico); /* Cambia el borde en hover */
 }

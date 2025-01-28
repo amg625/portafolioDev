@@ -1,0 +1,85 @@
+:root {
+    --azulfondo: #0c122e;
+    --azulClaro: #0284b8;
+    --dorado: #d69a2a;
+    --rojo: #c00e0e;
+    --grisOscuro: #2f2f2f;
+    --verdeWhatsApp: #24bd5c;
+    --blanco: white;
+    --negro: black;
+    --font-size: 16px;
+    --border-radius: 8px;
+}
+body {
+    margin: 0px;
+    padding: 30px 50px;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: var(--azulfondo);
+}
+h1{
+    background-color: var(--rojo);
+    color: var(--blanco);
+    padding: 20px;
+}
+.detalles{
+    display: inline-block;
+    background-color: var(--dorado);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: var(--blanco);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* El contenedor tiene 2fr para el primer elemento y 1fr para el segundo */
+    gap: 5px; /* Espacio entre los elementos */
+}
+.description{
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    color: var(--blanco);
+}
+.description_photo{
+    display: flex; /* Habilitar flexbox para organizar el contenido interno */
+    justify-content: flex-end; /* Alinear la imagen a la derecha */
+    align-items: center; /* Centrar verticalmente */
+    background-size: contain; /* Ajustar imagen de fondo */
+    background-position: right; /* Imagen en el borde derecho */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    padding: 10px; /* Espaciado interno opcional */
+}
+.thumbnail {
+    max-width: 90%; /* Imagen adaptable al contenedor */
+    height: auto; /* Mantener proporciones */
+    cursor: pointer;
+}
+
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000; /* Por encima de todo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semitransparente */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 80%; /* Tamaño máximo en pantalla */
+    max-height: 80%;
+}
+
+.modal .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}

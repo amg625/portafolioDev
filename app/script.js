@@ -55,3 +55,16 @@ document.getElementById("send-whatsapp").addEventListener("click", () => {
     // Abre la URL en una nueva pestaña
     window.open(whatsappUrl, "_blank");
 });
+
+// FUNCION PARA AMPLIAR IMAGENES
+function openModal(imgElement) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+
+    modal.style.display = "flex";
+    modalImg.src = imgElement.src; // Usa la misma imagen que fue clickeada
+}
+
+function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> <!-- Define la codificación de los caracteres -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Página responsiva y que se adapte al tamaño de dispositivos -->
+        <title>Proyecto SerenaIA</title> <!-- Nombre de la página en la pestaña del navegador -->
+        <meta name="author" content="Guillermo Alvarez"> <!-- Responsable y creador del documento -->
+        <link rel="icon" href="../media/icoDev.ico" type="image/x-icon"> <!-- Icono que se ve en la pestaña del navegador -->
+        <!-- Importa el archivo CSS de Font Awesome, una biblioteca de íconos y fuentes diseñadas para su uso en sitios web -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/styleproject.css"> <!-- Invoca el archivo de estilos css -->
+        <script src="../app/script.js"></script> <!-- Invoca el archivo de javascript -->
+    </head>
+    <body>
+        <header id="serena">
+        <h1>Proyecto desarrollo SerenaIA</h1>
+        </header>
+        <div class="project">
+            <div class="hero-serena">
+            <div class="detalles">
+            <p>Giro: Chatbot como herramienta para apoyo de meditación</p>
+            <p>Objetivo: Implementar chatbot capaz de crear respuestas automatizadas por chatgpt y brindar meditaciones guiadas por voz con elevenlabs.</p>
+            <p>Tecnologías: Javascript, Python, Node.js, ChatGPT y ElevenLabs</p>
+        </div>
+    </div>
+        <section class="container">
+            <div class="description">
+                <p>La implementación del chatbot tenia como objetivo dirigirse a usuarios con la necesidas de crear un ambiente agradable y abrirse simulando una plática psicológica con la responsabilidad que implica que no sustituye un profesional. Se canalizan solo respuestas positivas al prompt de chatgpt.<br><br>
+                El proyecto tiene una parte de gestión y una de desarrollo, en la cuál se gestiona con metodología ágil, se buscan todos los recursos disponibles, de los cuales se pretendía utilizar la API de OPENAI y la API de ELEVENLABS sin embargo no estába contemplado en el presupuesto por lo tanto se generaron respuestas simuladas.<br><br>
+                Se realiza la integración en node.js para configurar con javascript las respuestas de chatgpt así mismo generar por medio de elevenlabs las voces para la meditación guiada, sin embargo también se simularon para este proceso aunque se cuenta con el desarrollo para el momento que se cuente con ambas API (con costo).<br><br>
+                El chatbot responde a una conversación en donde identifica el sentimiento inicial del usuario, realiza un análisis basado en preguntas y al final se brinda un análisis completo del resultado del estado de ánimo, se brinda opción de meditación ofreciendo opciones como por ejemplo, para dormir, para estudiar, para relajarse, etc.<br><br>
+            <div class="code">Código: Se presenta un sitio web HTML, CSS, Javascript y Node.js.</div>
+            <img src="../media/projects/codeserena.jpg" alt="Codigo Fuente serenaIA" width="70%" height="40%">
+        </div>
+                <img src="../media/projects/p6.jpg" alt="Imagen ampliable" class="thumbnail" onclick="openModal(this)">
+        <!-- Modal para mostrar la imagen ampliada -->
+                <div id="imageModal" class="modal" onclick="closeModal()">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="modalImg">
+                </div>
+            </div>
+                <div class="button-generic"><a href="https://drive.google.com/file/d/1cjzVBQMsFUWsM94HbDdhVoQAXINV6360/view?usp=drive_link" target="_blank">🚧 Diagrama de flujo</a></div>
+                <div class="button-generic"><a href="https://drive.google.com/file/d/1gywIgTN8b8z1NBuW2J-_5ANKVX2HvxSb/view?usp=drive_link" target="_blank">🖥️ Pantallas del sitio</a></div>
+                <div class="button-generic"><a href="https://github.com/amg625/serenaIA.git" target="_blank">🛠️ Código fuente en GitHub</a></div>
+                <div class="description_photo">
+                <div class="button-generic"><a href="../index.html" target="_self">⭐ Sitio Principal</a></div>
+        </section>
+        </div>
+    </body>
+</html>
+

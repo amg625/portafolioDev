@@ -246,6 +246,7 @@ a{
 /*INICIA SECCION DE ESTUDIOS*/
 .certified {
         background-color: var(--grisOscuro);
+        background: rgba(0, 0, 0, 0.5);
         padding: 20px;
         margin: 20px 0px;
         border-radius: 5px;
@@ -303,6 +304,7 @@ a{
         width: 350px; /* Ajusta el ancho del marco según sea necesario */
         padding: 0px 30px;
         background-color: var(--grisOscuro);
+        background: rgba(0, 0, 0, 0.5);
         color: #ffffff;
         border: 2px solid var(--azulClaro);
         box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
@@ -398,6 +400,7 @@ a{
         max-width: 500px; /* Máximo ancho para pantallas grandes */
         padding: 30px 45px;
         background-color: var(--grisOscuro);
+        background: rgba(0, 0, 0, 0.5);
         border: 1px solid var(--azulClaro);
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -413,6 +416,7 @@ form input, form textarea {
         padding: 10px;
         margin: 5px -10.5px;
         background-color: var(--grisOscuro);
+        background: rgba(0, 0, 0, 0.5);
         border: 1px solid var(--azulClaro);
         color: #ffffff;
         border-radius: 3px;
@@ -475,6 +479,7 @@ form button:hover {
 }
 .project{
         background-color: var(--grisOscuro);
+        background: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
         color: var(--blanco);
         padding: 20px;
         margin: 20px 0px;
@@ -482,7 +487,7 @@ form button:hover {
         flex: 1;
 }
 .projects-button{
-        display: inline-block;
+        display: inline-block; /* Asegura que el botón se ajuste al tamaño del contenido */
         margin-top: 10px;
         padding: 10px 15px;
         background-color: var(--azulClaro); /* Fondo azul de tu paleta */
@@ -494,6 +499,7 @@ form button:hover {
         border-radius: 5px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra sutil */
         transition: background-color 0.3s ease, color 0.3s ease;
+        white-space: nowrap; /* Evita que el texto se divida en varias líneas */
 }
 .projects-button:hover {
         background-color: var(--azulElectrico); /* azul más claro para hover */

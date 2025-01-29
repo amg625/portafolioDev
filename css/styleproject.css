@@ -1,8 +1,9 @@
 :root {
     --azulfondo: #0c122e;
     --azulClaro: #0284b8;
+    --azulElectrico: #3ecff0;
     --dorado: #d69a2a;
-    --rojo: #c00e0e;
+    --rojo: #a90c0c;
     --grisOscuro: #2f2f2f;
     --verdeWhatsApp: #24bd5c;
     --blanco: white;
@@ -12,27 +13,66 @@
 }
 body {
     margin: 0px;
-    padding: 30px 50px;
     font-family: Arial, sans-serif;
     color: #ffffff;
     background-color: var(--azulfondo);
 }
 h1{
-    background-color: var(--rojo);
-    color: var(--blanco);
-    padding: 20px;
+    margin: 1%;
+}
+.hero-paqueteria{
+    background-image: url(../media/projects/impaqueteria.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-ecommerce{
+    background-image: url(../media/projects/imecommerce.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-inter{
+    background-image: url(../media/projects/iminter.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-lab{
+    background-image: url(../media/projects/imlab.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-banco{
+    background-image: url(../media/projects/imbancario.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-serena{
+    background-image: url(../media/projects/imserena.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-vacuno{
+    background-image: url(../media/projects/imvacuno.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .detalles{
-    display: inline-block;
-    background-color: var(--dorado);
     font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0, 0, 0, 0.5); /* Oscurece la imagen */
+    font-size: larger;
     font-weight: bold;
     color: var(--blanco);
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 30px 50px;
 }
 .container {
     display: grid;
+    padding: 30px 50px;
     grid-template-columns: 2fr 1fr; /* El contenedor tiene 2fr para el primer elemento y 1fr para el segundo */
     gap: 5px; /* Espacio entre los elementos */
 }
@@ -50,6 +90,14 @@ h1{
     background-position: right; /* Imagen en el borde derecho */
     background-repeat: no-repeat; /* No repetir la imagen */
     padding: 10px; /* Espaciado interno opcional */
+}
+@media (max-width: 768px) { /* Cambia el ancho según tus necesidades */
+    .container {
+        display: grid;
+        padding: 30px 50px;
+        grid-template-columns: 1fr;
+        gap: 5px; /* Espacio entre los elementos */
+    }
 }
 .thumbnail {
     max-width: 90%; /* Imagen adaptable al contenedor */
@@ -82,4 +130,63 @@ h1{
     font-size: 30px;
     color: white;
     cursor: pointer;
+}
+.code{
+    padding-bottom: 50px;
+}
+/*Configuración de botón genérico, se usa para "Descargar CV"*/
+.button-generic a{
+    font-style: normal;
+    background-color: var(--azulClaro);
+    border-radius: 5px;
+    border-color: var(--azulClaro);
+    margin: 20px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--blanco);
+    display: inline-block; /* Asegura que el botón se ajuste al tamaño del contenido */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+/*Hover indica que ocurre al posicionar el puntero en el botón*/
+.button-generic a:hover {
+    background-color: var(--azulElectrico); /* azul más oscuro para hover */
+    color: var(--blanco); /* Texto ligeramente más claro en hover */
+    border-color: var(--azulElectrico); /* Cambia el borde en hover */
+    text-decoration: none;
+}
+#paqueteria{
+    background-color: var(--rojo);
+    text-align: center;
+    color: var(--blanco);
+    padding: 1px;
+}
+#ecommerce{
+    background-color: var(--azulElectrico);
+    text-align: center;
+    color: var(--blanco);
+    padding: 1px;
+}
+#polar{
+    background-color: #0235ac;
+    text-align: center;
+    color: var(--blanco);
+    padding: 1px;
+}
+#lab{
+    background-color: #05088d;
+    text-align: center;
+    color: #d86902;
+    padding: 1px;
+}
+#banco{
+    background-color: #1c528d;
+    text-align: center;
+    color: #eaeaea;
+    padding: 1px;
+}
+#serena{
+    background-color: #20aa8a;
+    text-align: center;
+    color: #eaeaea;
+    padding: 1px;
 }

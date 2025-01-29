@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8"> <!-- Define la codificación de los caracteres -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Página responsiva y que se adapte al tamaño de dispositivos -->
-        <title>Proyecto Paqueteria</title> <!-- Nombre de la página en la pestaña del navegador -->
+        <title>Proyecto ecommerce</title> <!-- Nombre de la página en la pestaña del navegador -->
         <meta name="author" content="Guillermo Alvarez"> <!-- Responsable y creador del documento -->
         <link rel="icon" href="../media/icoDev.ico" type="image/x-icon"> <!-- Icono que se ve en la pestaña del navegador -->
         <!-- Importa el archivo CSS de Font Awesome, una biblioteca de íconos y fuentes diseñadas para su uso en sitios web -->
@@ -12,28 +12,27 @@
         <script src="../app/script.js"></script> <!-- Invoca el archivo de javascript -->
     </head>
     <body>
-        <header id="paqueteria">
-        <h1>Proyecto desarrollo para paqueteria</h1>
+        <header id="ecommerce">
+        <h1>Proyecto desarrollo para ecommerce</h1>
         </header>
         <div class="project">
-            <div class="hero-paqueteria">
+            <div class="hero-ecommerce">
             <div class="detalles">
-            <p>Giro: Paquetería lider a nivel mundial</p>
+            <p>Giro: Ecommerce venta de productos por catálogo</p>
             <p>Objetivo: Creación de un Chatbot implementando NLP</p>
             <p>Tecnologías: HTML, CSS, Javascript, API REST, Laravel, NLP</p>
         </div>
-        </div>
+    </div>
         <section class="container">
             <div class="description">
-            <p>La implementación del chatbot tenia como objetivo mostrar a usuarios un menú de opciones con la posibilidad de rastrear guías, cotizar envíos y comprar envíos, asi mismo para usuarios asociados tener opciones preferenciales<br><br>
-            El chatbot se desarrolló de la siguiente manera: <br>Se hace la evaluación del proyecto con el equipo de PM y UX con el objetivo de entender los alcances y posteriormente hacer el diseño que vaya acorde con las necesidades del usuario, una vez aprobado por el cliente se procede a evaluar el desarrollo, solicitar los recursos indisepensables para evitar contratiempos en el desarrollo, por ejemplo web services API para conectarnos y posteriormente se inicia con el desarrollo en la plataforma Calixta de Auronix, basado en Javascript, se implementa el frontend así mismo existe dentro del menú una opción para usuarios asociados y para ello se requiere un login, debido a las restricciones de Meta, no es posible solicitar información confidencial por estos medios por ejemplo una contraseña, por ello se implementó una landing page con el propísito de hacer login y posteriormente volver al chatbot ya con la confirmación de acceso.<br><br>
-            El backend fue desarrollado en laravel para la construcción de un middleware que nos permite conectarnos a la API del cliente para las consultas de los usuarios, rastrear las guías, y consultas de la cotización. Se creó un ambiente de pruebas y un ambiente productivo y se generó por normativa un BasicAuth para respaldar la seguridad del consultas.<br><br>
+            <p>La implementación del chatbot tenia como objetivo dirigirse a las asociadas(os) que se encargan de la venta de distribución de diferente variedad de productos.<br><br>Se hace la evaluación del proyecto con el equipo de PM y UX con el objetivo de entender los alcances y posteriormente hacer el diseño que vaya acorde con las necesidades del usuario, una vez aprobado por el cliente se procede a evaluar el desarrollo, solicitar los recursos indisepensables para evitar contratiempos en el desarrollo, por ejemplo web services API para conectarnos y posteriormente se inicia con el desarrollo en la plataforma Calixta de Auronix, basado en Javascript, se implementa el frontend así mismo existe dentro del menú una opción para usuarios asociados y para ello se requiere un login, sin embargo este no se aplica con usuario y contraseña, por lo cual solo se ingresa el número de asociado y si este hace match con el número telefónico desde el que escribe con el número de asociado procede a mostrar las diferentes opciones.<br><br>
+            El backend fue desarrollado en laravel para la construcción de un middleware que nos permite conectarnos a la API del cliente para las consultas de distribución, beneficios, pagos, saldos y el programa credilazos. Se creó un ambiente de pruebas y un ambiente productivo y se generó por normativa un BasicAuth para respaldar la seguridad del consultas.<br><br>
             El NLP se construyó con un sistema el cual contaba con el análisis de la data por medio de clasificación de texto este se alimentaba inicialmente de forma manual y eventualmente se recopilaban por medio de un reporte las frases más utilizadas por los usuarios para identificar los objetivos del contacto y hacer vínculo con la clasificiación, estas frases ingresaban al sistema de entrenamiento para así aumentar el porcentaje de efectividad de acuerdo a las frases que los usuarios ingresaban.<br><br>
             <div class="code">Código: De acuerdo a un NDA firmado por la empresa Auronix, no se permite revelar el contenido del código.</div>
             <div class="button-generic"><a href="../index.html" target="_self">⭐ Sitio Principal</a></div>
         </div>
             <div class="description_photo">
-                <img src="../media/projects/p1.jpg" alt="Imagen ampliable" class="thumbnail" onclick="openModal(this)">
+                <img src="../media/projects/p2.jpeg" alt="Imagen ampliable" class="thumbnail" onclick="openModal(this)">
         <!-- Modal para mostrar la imagen ampliada -->
                 <div id="imageModal" class="modal" onclick="closeModal()">
                     <span class="close">&times;</span>

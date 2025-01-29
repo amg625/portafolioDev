@@ -17,6 +17,14 @@ body {
     color: #ffffff;
     background-color: var(--azulfondo);
 }
+a{
+    color: var(--azulElectrico);
+    text-decoration: none;
+}
+a:hover{
+    color: var(--azulClaro);
+    text-decoration: none;
+}
 h1{
     margin: 1%;
 }
@@ -58,6 +66,18 @@ h1{
 }
 .hero-vacuno{
     background-image: url(../media/projects/imvacuno.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-ines{
+    background-image: url(../media/projects/imines.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-security{
+    background-image: url(../media/projects/imsec.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -181,11 +201,23 @@ h1{
 #banco{
     background-color: #1c528d;
     text-align: center;
-    color: #eaeaea;
+    color: #5f0202;
     padding: 1px;
 }
 #serena{
     background-color: #20aa8a;
+    text-align: center;
+    color: #eaeaea;
+    padding: 1px;
+}
+#ines{
+    background-color: #9f08b7;
+    text-align: center;
+    color: #eaeaea;
+    padding: 1px;
+}
+#security{
+    background-color: #0d880b;
     text-align: center;
     color: #eaeaea;
     padding: 1px;

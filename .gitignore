@@ -1,0 +1,10 @@
+# Ignorar archivos de configuración con credenciales
+app/config.php
+app/.env
+
+# Ignorar otras configuraciones del sistema
+*.log
+.DS_Store
+node_modules/
+vendor/
+.env

@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // FUNCION PARA AGREGAR BOTON DE WHATSAPP
+document.addEventListener("DOMContentLoaded", () => { //El botón se carga dinámicamente después del script, usamos DOMContentLoaded o sin usarlo colocariamos el script al final del <body>
 document.getElementById("send-whatsapp").addEventListener("click", () => {
     const phoneNumber = "5215588101487"; // Reemplaza con el número de teléfono (formato internacional)
     const message = "¡Hola! Estoy interesado en contactarte."; // Mensaje inicial
@@ -54,6 +55,7 @@ document.getElementById("send-whatsapp").addEventListener("click", () => {
 
     // Abre la URL en una nueva pestaña
     window.open(whatsappUrl, "_blank");
+});
 });
 
 // FUNCION PARA AMPLIAR IMAGENES
